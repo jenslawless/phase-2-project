@@ -43,3 +43,29 @@
   justify-content: center;
   text-align: center;
 }
+
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.oppHeader {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.oppCards {
+  padding: 20px;
+}
+
+.custom-card .content {
+  flex: 1;
+}
+
+.indi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}

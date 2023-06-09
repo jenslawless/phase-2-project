@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
         <React.Fragment>
             <div className="navigationWrapper">
                 <NavBar />
-                <main>{children}</main>
+                <div style={{ marginTop: '100px' }}>
+                    <main>{children}</main>
+                </div>
             </div>
         </React.Fragment>
     );

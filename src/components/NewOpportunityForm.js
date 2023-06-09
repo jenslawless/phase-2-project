@@ -39,13 +39,17 @@ export default function NewOpportunityForm({ onSubmit }) {
 
     return (
         <div>
-            <h3>Add your opportunity...</h3>
-            <Form onSubmit={handleSubmit}>
+            <h3>Need volunteers to help at your next event? Add your organization and request here!</h3>
+            <Form onSubmit={handleSubmit} class='vertical-form'>
                 <Form.Group widths="equal">
-                    <Form.Input fluid label="Name of organization" placeholder="Name" name="name" value={formData.name} onChange={handleChange} />
-                    <Form.Input fluid label="type" placeholder="Type of cause" name="type" value={formData.type} onChange={handleChange} />
+                    <div className='eight wide field'>
+                        <Form.Input label="Name of organization" placeholder="Name" name="name" value={formData.name} onChange={handleChange} />
+                    </div>
+                    <div className='eight wide field'>
+                        <Form.Input label="type" placeholder="Type of cause" name="type" value={formData.type} onChange={handleChange} />
+                    </div>
                     <Form.Input
-                        fluid
+
                         label="Image"
                         placeholder="image here"
                         name="image"
@@ -53,7 +57,7 @@ export default function NewOpportunityForm({ onSubmit }) {
                         onChange={handleChange}
                     />
                     <Form.Input
-                        fluid
+
                         label="Description of the opportunity"
                         placeholder="description here"
                         name="description"
